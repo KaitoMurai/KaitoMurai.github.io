@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+	
+
+	p{
+		font-size: 80%; !important
+	}
+
+	a{
+		font-size: 80%;
+	}
+
+	table , td, th {font-size: 100%;}
+
+	tr.top{
+		font-weight: bolder;
+		font-size: 100%;
+	}
+
+	td, th {height: 40px;}
+
+	#footer{font-size: 80%;}
+
+	.br-sp{display: block;}
+
+	#RealtimeClockArea2{font-size: 100%;}
+
+	h1{
+		font-size: 120%;
+		line-height: 150%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

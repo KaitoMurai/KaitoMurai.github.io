@@ -1,0 +1,55 @@
+﻿body{
+	-webkit-text-size-adjust: 100%;
+	background: radial-gradient(#C33764, #1D2671 ) fixed;
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); 雨天時用 */
+	/*background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);*/
+	font-size: 18px;
+	margin: 3% ; 
+	height: 100%;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	/* color: white;
+	text-indent: 2%;
+	font-size: 180%;
+	background: linear-gradient(to bottom, #1f235b, #071cff);
+    font-weight: lighter;
+    font-family: Century,-apple-system, BlinkMacSystemFont,  'Helvetica Neue', 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+	line-height: 150% ; */
+
+	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: #f4f4f4;/*背景色*/
+	border-left: solid 10px #7db4e6;/*左線*/
+	border-bottom: solid 3px #d7d7d7;/*下線*/
+	font-size: 180%;
+}
+p{
+	width: 100%;
+	margin: 5px 5px;
+	font-size: 100%;
+	color: white;
+}
+a{
+	color: white;
+}
+#RealtimeClockArea2{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 180%;
+}
+
+#footer{
+   color: white;
+   font-size: 100%;
+   text-align: center;
+   margin: 6% -3% 3% 0;
+   width: 100%;
+   font-family: Century;
+}
+
+.br-sp{display: none;}

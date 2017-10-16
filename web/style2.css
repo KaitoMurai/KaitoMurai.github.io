@@ -1,0 +1,39 @@
+/*
+
+以下テーブル
+
+*/
+table , td, th {
+	color: white;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	font-size: 130%;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	/*background-color: white;*/
+}
+td, th {
+	padding: 3px;
+	width: 30px;
+	height: 50px;
+}
+tr.top{
+	font-weight: bolder;
+	font-size: 110%;
+}
+.time{
+	font-weight: bolder;
+	width: 10%;
+}
+.stage{
+	width: 25%;
+}
+.ground{
+	width: 25%;
+}
+.gym{
+	width: 25%;
+}
