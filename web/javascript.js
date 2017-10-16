@@ -1,5 +1,4 @@
 function set2fig(num) {
-    // Œ…”‚ª1Œ…‚¾‚Á‚½‚çæ“ª‚É0‚ğ‰Á‚¦‚Ä2Œ…‚É’²®‚·‚é
     var ret;
     if (num < 10) { ret = "0" + num; }
     else { ret = num; }
@@ -14,7 +13,7 @@ function showClock2() {
     var nowSec = set2fig(nowTime.getSeconds());
     var dayOfWeek = nowTime.getDay();
     var dayOfWeekStr = ["(Sun) ", "(Mon) ", "(Tue) ", "(Wed) ", "(Thu) ", "(Fri) ", "(Sat) "][dayOfWeek];
-    var msg = "Œ»İ‚Í " + thisMonth + "/" + today + " " + dayOfWeekStr + nowHour + "F" + nowMin + "F" + nowSec + " ‚Å‚·";
+    var msg = "ç¾åœ¨æ™‚åˆ»ã¯" + thisMonth + "/" + today + " " + dayOfWeekStr + nowHour + "Âï¼š" + nowMin + "Âï¼š" + nowSec + "ã§ã™";
     document.getElementById("RealtimeClockArea2").innerHTML = msg;
 }
 setInterval('showClock2()', 100);
