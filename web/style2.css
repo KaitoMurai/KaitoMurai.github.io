@@ -26,8 +26,8 @@ tr.top{
 }
 .time{
 	font-weight: bolder;
-	width: 10%;
-	display: inline-block;
+	/*display: inline-block;*/
+	white-space:nowrap;
 }
 .stage{
 	width: 25%;
