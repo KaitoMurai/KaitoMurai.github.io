@@ -1,0 +1,12 @@
+body{
+	background: linear-gradient(to bottom,#30cfd0 0%,#330867 100%);
+}
+
+
+table {
+   table-layout: fixed;     /* 固定レイアウト */
+}
+tr td:nth-of-type(1) {
+	width:20%;
+	white-space: nowrap;
+}
