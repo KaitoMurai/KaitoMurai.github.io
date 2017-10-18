@@ -13,7 +13,7 @@ function showClock2() {
     var nowSec = set2fig(nowTime.getSeconds());
     var dayOfWeek = nowTime.getDay();
     var dayOfWeekStr = ["(Sun) ", "(Mon) ", "(Tue) ", "(Wed) ", "(Thu) ", "(Fri) ", "(Sat) "][dayOfWeek];
-    var msg = "現在時刻は" + thisMonth + "/" + today + " " + dayOfWeekStr + nowHour + "：" + nowMin + "：" + nowSec + "です";
+    var msg = "現在時刻は" + thisMonth + "/" + today + "&emsp" + dayOfWeekStr + nowHour + "：" + nowMin + "：" + nowSec + "です";
     document.getElementById("RealtimeClockArea2").innerHTML = msg;
 }
 setInterval('showClock2()', 100);
