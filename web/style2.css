@@ -24,10 +24,14 @@ tr.top{
 	font-weight: bolder;
 	font-size: 110%;
 }
-.time{
+/*.time{
 	font-weight: bolder;
-	/*display: inline-block;*/
+	display: inline-block;
 	white-space:nowrap;
+}*/
+tr td:nth-of-type(1) {
+	font-weight: bolder;
+	white-space: nowrap;
 }
 .stage{
 	white-space:nowrap;
