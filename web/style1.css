@@ -1,5 +1,4 @@
 ﻿body{
-	background: linear-gradient(to bottom,#30cfd0 0%,#330867 100%);
 	 
 	/*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); /*雨天時用 */
 	/*background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);*/
@@ -9,6 +8,7 @@
 	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
+	background: linear-gradient(to bottom,#30cfd0 0%,#330867 100%);
 }
 
 h1{
