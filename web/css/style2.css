@@ -27,7 +27,7 @@ tr.top{
 	font-size: 110%;
 }
 tr td:nth-child(1) {
-	width:white-space: nowrap;
+	white-space: nowrap;
 }
 /*.time{
 	font-weight: bolder;
