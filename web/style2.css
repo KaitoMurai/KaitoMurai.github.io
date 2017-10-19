@@ -30,7 +30,6 @@ tr.top{
 	white-space:nowrap;
 }*/
 tr td:nth-of-type(1) {
-	font-weight: bolder;
 	white-space: nowrap;
 }
 .stage{
