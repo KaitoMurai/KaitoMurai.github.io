@@ -26,6 +26,9 @@ tr.top{
 	font-weight: bolder;
 	font-size: 110%;
 }
+tr td:nth-child(1) {
+	width:white-space: nowrap;
+}
 /*.time{
 	font-weight: bolder;
 	display: inline-block;
