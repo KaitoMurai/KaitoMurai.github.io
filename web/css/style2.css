@@ -1,8 +1,9 @@
-/*
+/*******************
 
-以下テーブル
+テーブルのCSS
+（雨天時ver）
 
-*/
+*******************/
 table , td, th {
 	color: white;
 	border: 1px solid #dddddd;
