@@ -37,7 +37,7 @@ table a {
         text-indent: -9999px;
         /*position: absolute;*/
         background: #000;
-        opacity: 0.5;
+        opacity: 0.6;
         z-index: 5;
 
   	min-height: 100%;
