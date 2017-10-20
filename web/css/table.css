@@ -1,7 +1,6 @@
 /*******************
 
 テーブルのCSS
-（雨天時ver）
 
 *******************/
 table , td, th {
@@ -19,9 +18,9 @@ table , td, th {
 td, th {
 	padding: 3px;
 	height: 50px;
-	width : 33.33333% ; /* 未対応ブラウザ用フォールバック */
-  	width : -webkit-calc(100% / 3) ;
-  	width : calc(100% / 3) ;
+	width : 25% ; /* 未対応ブラウザ用フォールバック */
+  	width : -webkit-calc(100% / 4) ;
+  	width : calc(100% / 4) ;
 }
 tr.top{
 	font-weight: bolder;
