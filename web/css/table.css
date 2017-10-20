@@ -1,4 +1,4 @@
-/*******************
+﻿/*******************
 
 テーブルのCSS
 
@@ -15,12 +15,21 @@ table , td, th {
 	vertical-align: middle;
 	/*background-color: white;*/
 }
+table a {
+	display: block;       /* リンクをブロックレベル化して表示 */
+	vertical-align:middle;
+}
 td, th {
 	padding: 3px;
 	height: 50px;
 	width : 25% ; /* 未対応ブラウザ用フォールバック */
   	width : -webkit-calc(100% / 4) ;
   	width : calc(100% / 4) ;
+	vertical-align: middle;
+}
+td{
+	vertical-align:middle;
+  	display:table-cell;
 }
 tr.top{
 	font-weight: bolder;

@@ -1,0 +1,97 @@
+﻿    ◆CSS
+    /* ContentsArea
+    -------------------------- */
+    #contents {
+    margin: 0 auto;
+    padding: 10px 0 50px 0;
+    width: 100%;
+}
+table a {
+   display: block;       /* リンクをブロックレベル化して表示 */
+  /*padding: 0.6em 1em;    内側の余白量を上下に0.6文字分＆左右に1文字分にする */
+}
+     
+    #openArt,
+    #openFoottoY, 
+    #openSweets,
+    #openLive,
+    #openCombi,
+    #openUn,
+    #openFootto,
+    #openMassuru{
+	display: none;
+	position: fixed;
+    	top: 0;
+   	left: 0;
+   	width: 100%;
+    	height: 120%;
+    }
+     
+    .close_overlay {
+	position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-indent: -9999px;
+        /*position: absolute;*/
+        background: #000;
+        opacity: 0.5;
+        z-index: 5;
+
+  	min-height: 100%;
+    }
+     
+    .modal_window {
+        top: 40%;
+        left: 50%;
+        margin: -150px 0 0 -200px;
+        width: 450px;
+        height: 300px;
+        text-align: center;
+        display: block;
+        background: #fff;
+        position: fixed;
+        z-index: 10;
+    }
+     
+    .modal_window h2 {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 15%;
+        line-height: 150%;
+        color: #fff;
+        font-size: 150%;
+        font-weight: bold;
+        text-align: left;
+        text-indent: 15px;
+        background: blue;
+    }
+     
+    .modal_window p {
+        padding: 0 15px 15px 15px;
+        font-size: 12px;
+        line-height: 160%;
+        text-align: left;
+    }
+    #pop{
+        color:black;
+	font-size: 90%;
+    }
+     
+     
+    /* CSS3 ModalWindow SET
+    -------------------------- */
+    @-webkit-keyframes modalFadeIn {
+        0% {opacity:0;display:block;}
+        100% {opacity:1;}
+    }
+     
+    div#modal div:target {
+        -webkit-animation-name: modalFadeIn; 
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        opacity: 1;
+        display:block;
+    }
