@@ -18,6 +18,7 @@ table , td, th {
 table a {
 	display: block;       /* リンクをブロックレベル化して表示 */
 	vertical-align:middle;
+	text-decoration: none;
 }
 td, th {
 	padding: 3px;
