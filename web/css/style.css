@@ -1,7 +1,7 @@
 ﻿    ◆CSS
     /* ContentsArea
     -------------------------- */
-    #contents {
+#contents {
     margin: 0 auto;
     padding: 10px 0 50px 0;
     width: 100%;
@@ -10,15 +10,13 @@ table a {
    display: block;       /* リンクをブロックレベル化して表示 */
   /*padding: 0.6em 1em;    内側の余白量を上下に0.6文字分＆左右に1文字分にする */
 }
-     
-    #openArt,
-    #openFoottoY, 
-    #openSweets,
-    #openLive,
-    #openCombi,
-    #openUn,
-    #openFootto,
-    #openMassuru{
+    /* Day1 */
+    #openArt,#openFoottoY,#openSweets,#openLive,#openCombi,#openUn,#openFootto,#openMassuru,
+    /* Day2 */
+    #openZatsugaku,#openHayagui,#openKaso,#openWater,#openGames,#openWindMusic,#openStamp,#openB-1,
+    /* Day 1&2 */
+    #openOP
+    {
 	display: none;
 	position: fixed;
     	top: 0;
@@ -60,16 +58,20 @@ table a {
         margin-bottom: 20px;
         width: 100%;
         height: 15%;
-        line-height: 150%;
-        color: #fff;
         font-size: 150%;
-        font-weight: bold;
+        /*font-weight: bold;*/
         text-align: left;
         text-indent: 15px;
-        background: blue;
+
+        color: #010101;/*文字色*/
+        background: #b5d1ff;/*背景色*/
+        border-bottom: solid 3px #516ab6;/*下線*/
+        line-height: 180%;
     }
      
     .modal_window p {
+        margin: 0 10px;
+        width: 415px;
         padding: 0 15px 15px 15px;
         font-size: 12px;
         line-height: 160%;
@@ -77,7 +79,11 @@ table a {
     }
     #pop{
         color:black;
-	font-size: 90%;
+	    font-size: 90%;
+    }
+
+    .close{
+        text-decoration: underline !important;
     }
      
      
