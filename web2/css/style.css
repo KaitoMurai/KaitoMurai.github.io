@@ -57,6 +57,7 @@ table a {
     }
     .BB{
         height: 380px;
+	width:460px;
     }
     .modal_window h2 {
         margin-bottom: 20px;
@@ -74,6 +75,7 @@ table a {
     }     
     .BB h2{
         height: 11.85%;
+	width: 100%;
     }
     .modal_window p {
         margin: 0 10px;
