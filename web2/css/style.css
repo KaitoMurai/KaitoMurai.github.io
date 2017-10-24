@@ -57,8 +57,17 @@ table a {
     }
     .BB{
         height: 380px;
-	width:500px;
+	width:480px;
     }
+     @media screen and (min-width:768px){
+      modal_window {
+        top: 40%;
+        left: 50%;
+        margin: -150px 0 0 -200px;
+        width: 80%;
+        height: 60%;
+     }
+}
     .modal_window h2 {
         margin-bottom: 20px;
         width: 100%;
