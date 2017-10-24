@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>第9回熊本高専 高専祭 -饗宴-</title>
+	<link rel="shortcut icon" href="img/logo_home2.png">
+
+
+	<!-- レスポンシブ -->
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+
+	<!-- ※デフォルトのスタイル -->
+	<link rel="stylesheet" media="all" type="text/css" href="style/main.css" />
+
+	<!-- ※スマートフォン用のスタイル（smart.css） -->
+	<link rel="stylesheet" media="all" type="text/css" href="style/smart.css" />
+
+	<!-- スタイルシート(button用) -->
+	<link rel="stylesheet" type="text/css" href="style/button.css">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
+
+	<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;}
+		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+		.tg th{color:black;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+		.tg .tg-tzkj{font-weight:bold;font-size:100%;text-align:center;vertical-align:top}
+		.tg .tg-bn4o{font-weight:bold;font-size:18px;text-align:center;vertical-align:top}
+		.tg .tg-p96l{font-weight:bold;font-size:15px;vertical-align:top}
+		.tg .tg-ah0q{font-weight:bold;font-size:22px;font-family:Arial, Helvetica, sans-serif !important;;text-align:center;vertical-align:top}
+		.tg .tg-yw4l{vertical-align:top}
+		.tg .tg-71p7{font-weight:bold;font-size:18px;font-family:"Arial Black", Gadget, sans-serif !important;;text-align:center;vertical-align:top}
+		.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+		</style>
+
+</head>
+
+
+<body>
+	<!-- コピー防止 -->
+	<!-- <body oncontextmenu='return false'>  -->
+	<!-- <body onMouseDown="return false;" onSelectStart="return false"> -->
+	<!-- ロード画面の設定 -->
+	<div id="loader-bg">
+		<div id="loader">
+			<img src="img/loading.gif" width="80" height="80"/>
+		</div>
+	</div>
+	<!-- ロード画面の設定 -->
+
+	<!-- ロード画面表示後に表示するコンテンツ -->
+	<div id="wrap">    
+
+		<!-- ヘッダー -->
+		<header>
+			<!-- <img src="img/logo_home2.png"> -->
+			<div style="position: relative;">
+				<img src="img/kf2017_poster-001.jpg" alt="topimg"; width="100%";> 
+				<div style="position:absolute; top:50px; left:30px; width: 430px;">
+					<!--▼▼ハンバーガーメニューここから▼▼-->
+					<div class="hm_wrap">
+						<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/>
+						<label for="hm_menu" class="hm_btn"></label>
+						<h2 class="hm_title">MENU</h2>
+						<nav class="hm_menu_wrap">
+							<ul class="hm_list">
+								<li><a href="http://www.kumamoto-nct.ac.jp/">ホーム</a></li>
+								<li><a href="#">グルメマップ</a></li>
+								<li><a href="#">タイムスケジュール</a></li>
+								<li><a href="#">球技大会</a></li>
+								<li><a href="#site">SITEMAP</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!--▲▲ハンバーガーメニューここまで▲▲-->
+				</div>
+			</div>
+
+		</header>
+		<!-- ヘッダー -->
+
+		<!-- メニュー（PC） -->
+		<div id="dropmenu">
+			<li><a href="#">高専祭</a>
+				<ul style="width:100%;">
+					<li><a href="#">ホーム</a></li>
+					<li><a href="#">グルメマップ</a></li>
+					<li><a href="#">タイムスケジュール</a></li>
+					<li><a href="#">球技大会</a></li>
+				</ul>
+			</li>
+			<li><a href="#">球技大会</a>
+				<ul style="width:100%;">
+					<li><a href="#date" >開催日</a></li>
+					<li><a href="#tournament">トーナメント表</a></li>
+					<li><a href="#schedule">タイムスケジュール</a></li>
+					<li><a href="#rule">ルール</a></li>
+				</ul>
+			</li>
+			<li><a href="#">その他</a>
+				<ul style="width:100%;">
+					<li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
+					<li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
+					<li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
+					<li><a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a></li>
+				</ul>
+			</li>
+		</div> 
+		<!-- メニュー（PC） -->
+
+		<!-- メインコンテンツ -->
+		<div id="main_contents">
+
+			<!-- サブタイトル -->
+			<h1 id="secondtitle">球技大会</h1>
+			<!-- サブタイトル -->
+
+			<!-- 開催日 -->
+			<h1 id="date"></h1>
+			<p class="openBtn"><span class="main_contents_h">▼開催日</span></p>
+			<dir class="textArea">
+				<span class="main_contents"> 10月30日(月) </span>
+			</dir>
+			<!-- 開催日 -->
+
+			<!-- トーナメント表 -->
+			<h1 id="tournament"></h1>
+			<p class="openBtn"><span class="main_contents_h">▼トーナメント表</span></p>
+			<dir class="textArea">
+				<!-- トーナメント -->
+				<p class ="main_contents_h"><span class="underline">サッカー</span></p>
+				<img class="images" src="tournament/fight_soccer.png">
+				<p class="main_contents_h"><span class="underline">バレー</span></p>
+				<img class="images" src="tournament/fight_volley.png">
+				<p class="main_contents_h"><span class="underline">バスケ</span></p>
+				<img class="images" src="tournament/fight_basket.png">
+				<p class="main_contents_h"><span class="underline">アルティメット(晴天時)</span></p>
+				<img class="images" src="tournament/fight_ultimate.png">
+				<p class="main_contents_h"><span class="underline">アルティメット(雨天時)</span></p>
+				<img class="images" src="tournament/fight_ultimate_utenji.png">
+				<p class="main_contents_h"><span class="underline">ドッヂボール</span></p>
+				<img class="images" src="tournament/fight_doji.png">
+				<p class="main_contents_h"><span class="underline">追いかけ玉入れ</span></p>
+				<img class="images" src="tournament/fight_tamaire.png">
+			</dir>
+			<!-- トーナメント表 -->
+
+
+			<!-- タイムスケジュール -->
+			<h1 id="schedule"></h1>
+			<p class="openBtn"><span class="main_contents_h">▼タイムスケジュール</span></p>
+			<dir class="textArea">
+				<!-- タイムスケジュールボタン -->
+				<section class="buttons">
+					<div class="container">
+						<a class="btn btn-5" onclick="hyoji(0)" style="display:inline;">晴天時</a>
+						<p style="display:inline;">&emsp;&emsp;</p>
+						<a class="btn btn-6" onclick="hyoji(1)" style="display:inline;">雨天時</a>
+					</div>
+				</section>
+				<!-- タイムスケジュールボタン -->
+
+				<!-- 時計 -->
+				<p id="time">Loading...</p>
+				<!-- 時計 -->
+
+				<div class="scroll">
+					<!-- 雨天時のタイムスケジュール -->
+					<table class="tg" id="utenji" style="display:none;table-layout: fixed;" border="1" align="center">
+							<colgroup>
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							<col style="width: 100px">
+							</colgroup>
+							  <tr>
+								<th class="tg-ah0q" colspan="12">平成29年度 体育的イベントタイムスケジュール(雨天時)<br></th>
+							  </tr>
+							  <tr>
+								<td class="tg-yw4l"></td>
+								<td class="tg-71p7" colspan="7">バスケ ・ ドッジ ・ サッカー ・ バレー<br></td>
+								<td class="tg-bn4o" colspan="4">アルティメット<br></td>
+							  </tr>
+							  <tr>
+								<td class="tg-yw4l"></td>
+								<td class="tg-amwm" colspan="3">前半<br></td>
+								<td class="tg-amwm">休憩<br></td>
+								<td class="tg-amwm" colspan="3">後半<br></td>
+								<td class="tg-yw4l" colspan="4"></td>
+							  </tr>
+							  <tr>
+								<td class="tg-yw4l"></td>
+								<td class="tg-amwm">開始<br></td>
+								<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br><br>(1分)<br></td>
+								<td class="tg-amwm">終了<br></td>
+								<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br><br>(1分)<br></td>
+								<td class="tg-amwm">開始<br></td>
+								<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br><br>(7分)<br></td>
+								<td class="tg-amwm">終了<br></td>
+								<td class="tg-bn4o" colspan="4" rowspan="5"><br><br>午後から野球場が使用できる場合<br><br>　一発トーナメント<br></td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">1試合目<br></td>
+								<td class="tg-amwm">9:20<br></td>
+								<td class="tg-amwm">9:27</td>
+								<td class="tg-amwm">9：28</td>
+								<td class="tg-amwm">9:35</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">2試合目</td>
+								<td class="tg-amwm">9:38</td>
+								<td class="tg-amwm">9:45</td>
+								<td class="tg-amwm">9:46</td>
+								<td class="tg-amwm">9:53</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">3試合目<br></td>
+								<td class="tg-amwm">9:56</td>
+								<td class="tg-amwm">10:03</td>
+								<td class="tg-amwm">10:04</td>
+								<td class="tg-amwm">10:11</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">4試合目</td>
+								<td class="tg-amwm">10:14</td>
+								<td class="tg-amwm">10:21</td>
+								<td class="tg-amwm">10:22</td>
+								<td class="tg-amwm">10:29</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">5試合目</td>
+								<td class="tg-amwm">10:32</td>
+								<td class="tg-amwm">10:39</td>
+								<td class="tg-amwm">10:40</td>
+								<td class="tg-amwm">10:47</td>
+								<td class="tg-amwm">一回戦①<br></td>
+								<td class="tg-amwm">12：00</td>
+								<td class="tg-amwm" rowspan="12"><br><br><br><br><br><br><br><br><br><br><br><br>(8分)<br></td>
+								<td class="tg-amwm">12：18</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">6試合目</td>
+								<td class="tg-amwm">10:50</td>
+								<td class="tg-amwm">10:57</td>
+								<td class="tg-amwm">10:58</td>
+								<td class="tg-amwm">11:05</td>
+								<td class="tg-amwm">一回戦②<br></td>
+								<td class="tg-amwm">12：00</td>
+								<td class="tg-amwm">12：28</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">7試合目</td>
+								<td class="tg-amwm">11:08</td>
+								<td class="tg-amwm">11:15</td>
+								<td class="tg-amwm">11:16</td>
+								<td class="tg-amwm">11:23</td>
+								<td class="tg-amwm">一回戦③<br></td>
+								<td class="tg-amwm">12：30</td>
+								<td class="tg-amwm">12：38</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">8試合目<br></td>
+								<td class="tg-amwm">11:26</td>
+								<td class="tg-amwm">11:33</td>
+								<td class="tg-amwm">11:34</td>
+								<td class="tg-amwm">11:41</td>
+								<td class="tg-amwm">一回戦④<br></td>
+								<td class="tg-amwm">12：40</td>
+								<td class="tg-amwm">12：48</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">9試合目</td>
+								<td class="tg-amwm">11:44</td>
+								<td class="tg-amwm">11:51</td>
+								<td class="tg-amwm">11:52</td>
+								<td class="tg-amwm">11:59</td>
+								<td class="tg-amwm">一回戦⑤<br></td>
+								<td class="tg-amwm">12:50</td>
+								<td class="tg-amwm">12:58</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm" rowspan="3"><br><br>昼休み<br></td>
+								<td class="tg-amwm" colspan="7" rowspan="3"><br><br>～12:45<br></td>
+								<td class="tg-amwm">一回戦⑥</td>
+								<td class="tg-amwm">13:00</td>
+								 <td class="tg-amwm">13:08</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">二回戦①</td>
+								<td class="tg-amwm">13:00</td>
+								 <td class="tg-amwm">13:18</td>
+							  </tr>
+								<tr>
+								<th class="tg-amwm">二回戦②</th>
+								<th class="tg-amwm">13:20</th>
+								<th class="tg-amwm">13:28</th>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">準々決勝①</td>
+								<td class="tg-amwm">13:00</td>
+								<td class="tg-amwm" rowspan="3"><br><br>(7分)</td>
+								<td class="tg-amwm">13:07</td>
+								<td class="tg-amwm" rowspan="3"><br><br>(2分)</td>
+								<td class="tg-amwm">13:09</td>
+								<td class="tg-amwm" rowspan="3"><br><br>(7分)</td>
+								<td class="tg-amwm">13:16</td>
+								<td class="tg-amwm">二回戦③</td>
+								<td class="tg-amwm">13:30</td>
+								<td class="tg-amwm">13:38</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">準々決勝②</td>
+								<td class="tg-amwm">13:18</td>
+								<td class="tg-amwm">13:25</td>
+								<td class="tg-amwm">13:27</td>
+								<td class="tg-amwm">13:34</td>
+								<td class="tg-amwm">二回戦④</td>
+								<td class="tg-amwm">13:40</td>
+								<td class="tg-amwm">13:48</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">準決勝</td>
+								<td class="tg-amwm">13:36</td>
+								<td class="tg-amwm">13:43</td>
+								<td class="tg-amwm">13:45</td>
+								<td class="tg-amwm">13:52</td>
+								<td class="tg-amwm">準決勝①</td>
+								<td class="tg-amwm">13:50</td>
+								<td class="tg-amwm">13:58</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">休憩</td>
+								<td class="tg-amwm" colspan="7">(10分)</td>
+								<td class="tg-amwm">準決勝②</td>
+								<td class="tg-amwm">14:00</td>
+								<td class="tg-amwm">14:08</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">決勝</td>
+								<td class="tg-amwm">14:02</td>
+								<td class="tg-amwm">(8分)</td>
+								<td class="tg-amwm">14:10</td>
+								<td class="tg-amwm">(2分)</td>
+								<td class="tg-amwm">14:12</td>
+								<td class="tg-amwm">(8分)</td>
+								<td class="tg-amwm">14:20</td>
+								<td class="tg-amwm">決勝</td>
+								<td class="tg-amwm">14:10</td>
+								<td class="tg-amwm">(12分)</td>
+								<td class="tg-amwm">14:22</td>
+							  </tr>
+							  <tr>
+								<td class="tg-amwm">玉入れ</td>
+								<td class="tg-amwm" colspan="7">玉入れは中止、各競技終了次第閉会式を行う.</td>
+								<td class="tg-yw4l" colspan="4"></td>
+							  </tr>
+							</table>
+					<!-- 雨天時のタイムスケジュール -->
+				</div>
+
+				<div class="scroll">
+					<!-- 晴天時のタイムスケジュール -->
+					<table class="tg" id="seitenji" style="undefined;table-layout: fixed; width: 772px" border="1" align="center">
+						<colgroup>
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						
+						</colgroup> 
+						   <tr>
+							<th class="tg-ah0q" colspan="16">平成29年度 体育的イベント タイムスケジュール(晴天時)</th>
+						  </tr>
+						  <tr>
+							<td class="tg-yw4l"></td>
+							<td class="tg-71p7" colspan="7">バスケ ・ ドッジ ・ サッカー ・ バレー ・ アルティメット</td>
+							<td class="tg-bn4o" colspan="8">女子フットサル<br></td>
+						  </tr>
+						  <tr>
+							<td class="tg-yw4l"></td>
+							<td class="tg-71p7" colspan="3">前半<br></td>
+							<td class="tg-71p7">休憩</td>
+							<td class="tg-71p7" colspan="3">後半<br></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-bn4o" colspan="3">前半<br></td>
+							<td class="tg-bn4o">休憩</td>
+							<td class="tg-bn4o" colspan="3">後半<br></td>
+						  </tr>
+						  <tr>
+							<td class="tg-045v"><br></td>
+							<td class="tg-amwm">開始<br></td>
+							<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br>(7分)<br></td>
+							<td class="tg-amwm">終了<br></td>
+							<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br>(1分)<br></td>
+							<td class="tg-amwm">開始<br></td>
+							<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br>(7分)<br></td>
+							<td class="tg-amwm">終了</td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-amwm">開始</td>
+							<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br>(6分)<br></td>
+							<td class="tg-amwm">終了</td>
+							<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br>(2分)<br></td>
+							<td class="tg-amwm">開始</td>
+							<td class="tg-amwm" rowspan="10"><br><br><br><br><br><br><br><br><br><br>(6分)<br></td>
+							<td class="tg-amwm">終了</td>
+						  </tr>
+						  <tr>
+							<td class="tg-tzkj">1試合目</td>
+							<td class="tg-amwm">9:20<br></td>
+							<td class="tg-amwm">9:27</td>
+							<td class="tg-amwm">9:28</td>
+							<td class="tg-amwm">9:35<br></td>
+							<td class="tg-amwm">1試合目</td>
+							<td class="tg-amwm">9:20</td>
+							<td class="tg-amwm">9:26<br></td>
+							<td class="tg-amwm">9:28</td>
+							<td class="tg-amwm">9:34</td>
+						  </tr>
+						  <tr>
+							<td class="tg-tzkj">2試合目</td>
+							<td class="tg-amwm">9:38</td>
+							<td class="tg-amwm">9:45</td>
+							<td class="tg-amwm">9:46<br></td>
+							<td class="tg-amwm">9:53</td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">3試合目</td>
+							<td class="tg-amwm">9:56</td>
+							<td class="tg-amwm">10:03</td>
+							<td class="tg-amwm">10:04<br></td>
+							<td class="tg-amwm">10:11</td>
+							<td class="tg-amwm">2試合目</td>
+							<td class="tg-amwm">9:56<br></td>
+							<td class="tg-amwm">10:02</td>
+							<td class="tg-amwm">10:04</td>
+							<td class="tg-amwm">10:10</td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">4試合目</td>
+							<td class="tg-amwm">10:14</td>
+							<td class="tg-amwm">10:21</td>
+							<td class="tg-amwm">10:22<br></td>
+							<td class="tg-amwm">10:29</td>
+							<td class="tg-yw4l"><br></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">5試合目</td>
+							<td class="tg-amwm">10:32</td>
+							<td class="tg-amwm">10:39</td>
+							<td class="tg-amwm">10:40<br></td>
+							<td class="tg-amwm">10:47</td>
+							<td class="tg-amwm">3試合目</td>
+							<td class="tg-amwm">10:32</td>
+							<td class="tg-amwm">10:38</td>
+							<td class="tg-amwm">10:40</td>
+							<td class="tg-amwm">10:46</td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">6試合目</td>
+							<td class="tg-amwm">10:50</td>
+							<td class="tg-amwm">10:57</td>
+							<td class="tg-amwm">10:58</td>
+							<td class="tg-amwm">11:05</td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">7試合目</td>
+							<td class="tg-amwm">11:08</td>
+							<td class="tg-amwm">11:15</td>
+							<td class="tg-amwm">11:16<br></td>
+							<td class="tg-amwm">11:23</td>
+							<td class="tg-amwm">4試合目</td>
+							<td class="tg-amwm">11:08</td>
+							<td class="tg-amwm">11:14</td>
+							<td class="tg-amwm">11:16</td>
+							<td class="tg-amwm">11:22</td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">8試合目</td>
+							<td class="tg-amwm">11:26</td>
+							<td class="tg-amwm">11:33</td>
+							<td class="tg-amwm">11:34</td>
+							<td class="tg-amwm">11:41<br></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+							<td class="tg-yw4l"></td>
+						
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">9試合目</td>
+							<td class="tg-amwm">11:44</td>
+							<td class="tg-amwm">11:51</td>
+							<td class="tg-amwm">11:52</td>
+							<td class="tg-amwm">11:59</td>
+							<td class="tg-amwm">5試合目</td>
+							<td class="tg-amwm">11:44</td>
+							<td class="tg-amwm">11:50</td>
+							<td class="tg-amwm">11:52</td>
+							<td class="tg-amwm">11:58</td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">昼休み</td>
+							<td class="tg-tzkj" colspan="15">～12:55</td>
+						  </tr>
+							 <tr>
+							<th class="tg-amwm">準決勝➀</th>
+							<th class="tg-amwm">13:00<br></th>
+							<th class="tg-amwm" rowspan="3"><br><br>(7分)<br></th>
+							<th class="tg-amwm">13:07</th>
+							<th class="tg-amwm" rowspan="3"><br><br>(2分)<br></th>
+							<th class="tg-amwm">13:09</th>
+							<th class="tg-amwm" rowspan="3"><br><br>(7分)<br></th>
+							<th class="tg-amwm">13:16<br></th>
+							<td class="tg-yw4l" colspan="8" rowspan="5"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">準決勝➁<br></td>
+							<td class="tg-amwm">13:18</td>
+							<td class="tg-amwm">13:25</td>
+							<td class="tg-amwm">13:27</td>
+							<td class="tg-amwm">13:34</td>
+							<td class="tg-yw4l" colspan="8"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">準決勝</td>
+							<td class="tg-amwm">13:36</td>
+							<td class="tg-amwm">13:43</td>
+							<td class="tg-amwm">13:45</td>
+							<td class="tg-amwm">13:52</td>
+							<td class="tg-yw4l" colspan="8"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">休憩</td>
+							<td class="tg-amwm" colspan="7">(10分)</td>
+							<td class="tg-yw4l" colspan="8"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">決勝</td>
+							<td class="tg-amwm">14:02<br></td>
+							<td class="tg-amwm">(8分)</td>
+							<td class="tg-amwm">14:10</td>
+							<td class="tg-amwm">(2分)</td>
+							<td class="tg-amwm">14:12</td>
+							<td class="tg-amwm">(8分)</td>
+							<td class="tg-amwm">14:20<br></td>
+							<td class="tg-yw4l" colspan="8"></td>
+						  </tr>
+						  <tr>
+							<td class="tg-amwm">玉入れ</td>
+							<td class="tg-amwm" colspan="16">14:45　　　　　　　　　　　　～　　　　　　　　　　　　16:20</td>
+						
+						  </tr>
+						</table>
+						
+					<!-- 晴天時のタイムスケジュール -->
+				</div>
+				<br>
+				<p>PDF版はこちら&nbsp;&nbsp;<a href="pdf/（晴天）H29_体育的イベントタイムスケ.pdf" target="_blank" id="sitemap_l">晴天時スケジュール</a>&nbsp;<a href="pdf/（雨天）H29_体育的イベントタイムスケ.pdf" target="_blank" id="sitemap_l">雨天時スケジュール</a></p>
+			</dir>
+			<!-- タイムスケジュール -->
+
+			<!--ルール説明-->
+			<h1 id="rule"></h1>
+			<p class="openBtn"><span class="main_contents_h">▼ルール</span></p>
+			<dir class="textArea">
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼得点配分</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>○各競技（サッカー、バレー、バスケ、アルティメット、ドッヂ）<br></c>
+						<c>・優勝　  ・・・10点<br></c>
+						<c>・準優勝  ・・・8点<br></c>
+						<c>・三位　　・・・5点<br></c>
+						<c>・決勝進出・・・3点<br></c>
+						<c><br></c>
+						<c>※女子リーグは学年対抗なので点数はありません。<br></c>
+						<c><br></c>
+						<c>○追いかけ玉入れ<br></c>
+						<c>・優勝　　　・・・10点<br></c>
+						<c>・準優勝　　・・・8点<br></c>
+						<c>・準決勝進出・・・5点<br></c>
+						<c><br></c>
+						<c>※追いかけ玉入れはトーナメント戦のため三位決定戦は行いません。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼サッカー</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">	
+						<c>・同点の場合はサドンデス方式ＰＫで勝者を決める。(決勝トーナメントのみ)<br></c>
+						<c>・スパイク着用禁止。使用した場合その試合は退場で、8人でプレーする。次の試合からはまた参加できる。<br></c>
+						<c>・女子が得点したら２点。<br></c>
+						<c>・危険なプレーは審判の判断でその試合を退場とする。<br></c>
+						<c>・その他ファールなどの基準は審判又は責任者に任せる。<br></c>
+						<c>・女子に強いボールが当たった場合、そこからフリーキックで再開。<br></c>
+						<c>・不戦勝の場合２‐０。<br></c>
+						<c>・ボールがコートから出た場合キックインからのスタート。<br></c>
+						<c>・キックインからの直接ゴールは無効。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼バスケ</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>・女子がゴールを決めた場合、プラス１点で計算する。<br></c>
+						<c>・危険なプレーの場合は審判の判断で退場になる場合がある。<br></c>
+						<c>・特に反則は取らないが、例外としてトラベリング・ダブルドリブル・審判の判断で簡単なファールなどは取る場合がある。<br></c>
+						<c>・シューズを絶対履くようにする。<br></c>
+						<c>・その他のルールは審判又は責任者に任せる。<br></c>
+						<c>・不戦勝は１０－０。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼バレー</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>・15分の1セット。<br>
+						<c>・ネットインあり、三回以内で相手コートに返す。<br></c>
+						<c>・男子は相手に女子が１人でもいるときに、ジャンプはできない。<br></c>
+						<c>・ブロックは１回に数えない。<br></c>
+						<c>・その他ルールは審判または責任者に任せる。<br></c>
+						<c>・不戦勝の場合は１０－０。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼アルティメット</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>・男子が得点を決めた場合は1点、女子が決めた場合は2点とする。<br></c>
+						<c>・不戦勝の場合は、１－０とする。<br></c>
+						<c>・自分のチームがフリスビーをフィールド外に出した場合は、フィールド外にでた地点から、相手チームがスローインを行う。<br></c>
+						<c>・決勝の試合で同点の場合どちらかが得点を決めるまで行う。<br></c>
+						<c>・危険なプレーを行った場合は審判の判断でその試合を退場とする。<br></c>
+						<c>・その他ファールなどの基準は審判又は責任者に任せる。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼ドッヂボール</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>・試合開始の時点で外野は2人とする．最低外野には１人いること。<br></c>
+						<c>・ジャンプしながらの投球は禁止。<br></c>
+						<c>・ボールを持っている人の足が相手のコートにはいったら相手ボールとなる。<br></c>
+						<c>・頭部へ当たった場合はノーカウント。<br></c>
+						<c>・女子は二回当たった時点で外に出る．再度当てて入った場合は一回あたっただけで外に出る。<br></c>
+						<c>・女子は二人分として数える。<br></c>
+						<c>・男子は女子にできるだけやさしく投げる。<br></c>
+						<c>・横投げあり。<br></c>
+						<c>・最初の外野は内野の残りが３人になった時点で必ず戻らなくてはならないこととする。<br></c>
+						<c>・最初の外野はビブスを着用する。<br></c>
+						<c>・不戦勝の場合７－０。<br></c>
+						<c>・外野にも範囲を作り範囲の中でワンタッチできなかった場合相手ボール。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼女子フットサル</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>・試合は選手6名で行います。<br></c>
+						<c>・試合時間は前半6分、休憩2分、後半6分で行います。<br></c>
+						<c>・試合形式は各学年との総当たり戦です。<br></c>
+						<c>・学年の中で最も勝率の高いチームを優勝とします。<br></c>
+						<c>・最終的に勝率が同じチームが出た場合は得失点差で優勝を決定します。<br></c>
+						<c>・試合人数が足りない場合はその人数で出場してもらいます。（なので、点呼に遅れないようにしてください）<br></c>
+						<c>・他の競技との掛持ちは許可します。<br></c>
+						<c>・危険なプレーを行った場合は審判の判断でその試合を退場とします。<br></c>
+					</span>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼追いかけ玉入れ</span></p>
+				<dir class="textArea_content">
+					<!--<span class="main_contents"> 10月30日(月) </span>-->
+					<c>なし<br></c>
+				</dir>
+				<p class="openBtn_i" style="margin-left: 10%;"><span class="main_contents_h">▼玉入れ</span></p>
+				<dir class="textArea_content">
+					<span class="main_contents">
+						<c>・より多く玉を入れたほうの勝ちとする。<br></c>
+						<c>・かご役の人は、けが防止のためヘルメットを着用すること。<br></c>
+						<c>・試合時間は40秒とする。<br></c>
+						<c>・危険なプレーをした人は審判の判断で退場とする。（あまり速いボールは投げない、頭を狙わないなど）<br></c>
+						<c>・投げる人は、かご役の人に触れてはいけない。<br></c>
+						<c>・選手は白線より外側に出てはいけない。<br></c>
+						<c>・同点の場合はじゃんけんで勝敗を決める。<br></c>
+					</span>
+				</dir>
+			</dir>
+			<!--ルール説明-->
+		</div>
+		<!-- メインコンテンツ -->
+
+		<!-- リンクを張るところ -->
+		<h1 id="site"></h1>
+		<div id="sitemap">
+			<div id = "link">
+				<a style = "display: table;" id = "sitemap_h">SITEMAP</a>
+				<a id="space">&emsp;</a>
+				<a id="sitemap_l" style = "display: table;" href="information.html">校内マップ</a>
+				<a id="sitemap_l" style = "display: table;" href="planning.html">高専祭本祭</a>
+				<a id="sitemap_l" style = "display: table;" href="#">球技大会</a>
+				<a id="sitemap_l" style = "display: table;" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a>
+				<a id="sitemap_l" style = "display: table;" href="https://twitter.com/sysken_ynct">SYSKEN Twitter</a>
+				<a id="sitemap_l" style = "display: table;" href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
+				<a id="sitemap_l" style = "display: table;" href="http://www.kumamoto-nct.ac.jp/">熊本高専HP</a>
+			</div>
+			<div id = "imag_area">
+				<img id="imgs" src="img/logo_home.png">
+			</div>
+		</div>
+		<!-- リンクを張るところ -->
+
+		<!-- フッター -->
+		<div id="footer" style="top: 0px; position: relative;">
+			<hr color="#fff"/>
+			©2017 NITKumamotoCollege-YatsushiroCampus All Rights Reserved.
+		</div>
+		<!-- フッター -->
+	</div>
+	<!-- ロード画面表示後に表示するコンテンツ -->
+
+	<!-- ページの一番上に移動 -->
+	<!-- <p id="page-top"><a href="#">PAGE TOP</a></p> -->
+	<!-- ページの一番上に移動 -->
+
+	<!-- 時計のスクリプト -->
+	<script>
+	   setInterval("DspClk()", 100); //100msごとに更新(時計)
+	</script>
+	<!-- 時計のスクリプト -->
+
+	<!-- スクリプト -->
+	<!-- カレント時間の取得 -->
+	<script type="text/javascript" src="script/clock.js" charset="Shift-JIS"></script>
+	<!-- ページ内のリンクにスムーズスクロール -->
+	<script type="text/javascript" src="script/scroll.js" charset="Shift-JIS"></script>
+	<!-- 表の表示非表示スクリプトの読み込み -->
+	<script type="text/javascript" src="script/hyou.js" charset="Shift-JIS"></script>
+	<!-- リロード時のサイトのフェードイン -->
+	<script type="text/javascript" src="script/fadein.js" charset="Shift-JIS"></script>
+	<!-- ロード画面の設定 -->
+	<script type="text/javascript" src="script/loading.js" charset="Shift-JIS"></script>
+	<!-- 内容を非表示表示する帯の設定 -->
+	<script type="text/javascript" src="script/obi.js" charset="Shift-JIS"></script>
+	<script type="text/javascript" src="script/obi_i.js" charset="Shift-JIS"></script>
+	<!-- ブラウザ判定 -->
+	<script type="text/javascript" src="script/judge_bro.js"></script>
+	<!-- スクリプト -->
+
+</body>
+</html>

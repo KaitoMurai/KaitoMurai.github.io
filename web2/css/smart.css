@@ -1,0 +1,391 @@
+﻿  /*===============================================
+  ●smart.css  画面の横幅が640pxまで
+  ===============================================*/
+  @media screen and (max-width: 768px){
+	/* リセットCSS ブラウザで強制的によみこまれる害悪CSSファイルを無効化 */	
+    *{
+        padding: 0;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);
+      /*background-color: white;*/
+    }
+    .hm_title h2{
+      font-family: sans-serif;
+    }
+ /* 表 */
+    .hyou{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    }
+ /* トーナメント表の画像 */
+  .images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+      height: auto;
+      max-width: 640px;
+  }
+ /* PC用メニューを非表示 */
+    #dropmenu{
+     display:none; 
+    }
+ /* ロード画面の設定 */
+    #loader-bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      background: #000;
+      z-index: 2048;
+    }
+    #loader-bg #loader {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      margin-top: -100px;
+      margin-left: -100px;
+      text-align: center;
+      color: #fff;
+      z-index: 2048;
+    }
+ /* ページのタイトル（一番大きい見出し） */   
+    #secondtitle {
+      font-family: "YuMincho", serif;
+      background-image: url("../img/crayonline.png"); 
+      font-size: 2.25em;
+      font-weight: normal;
+      text-shadow: 3px 3px 1px #555;
+      background-size: 100% 120%;
+      margin-top:1%;
+    }
+    /* リンクの書式 */
+    a{
+      text-decoration: none;
+      color: white;
+      font-family: "Yu Gothic UI","Meiryo UI",sans-serif;
+    }
+/* ページのメイン */    
+    #main_contents {
+      margin: 0% 3% 10% 3%;
+      font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+      color: #fff;
+    }
+ /* ページ内の小見出し(secondtitleより小さい) */   
+    .main_contents_h{
+      text-align:left;
+      font-size: 1.25em;
+    }
+ /* アンダーライン */	   
+	.underline{
+		background-image: url("../img/crayonline_h.png");
+		background-size: 100% 120%;
+	}
+/* カレント時間 */	
+   #time{
+    text-align:center;
+    font-size: 1.25em
+  }
+/* 表 */  
+  table {
+    white-space: nowrap;　　/*tableのセル内にある文字の折り返しを禁止*/
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom:0%; 
+    border-collapse: collapse;
+    text-align: center;
+    border: solid 2px #2F2F2F;
+    background-color:white;
+  }
+  table thead{
+    padding: 10px;
+    background-color:white;
+    font-weight: bold;
+    font-size: 1.0em;
+  }
+  table td {
+    padding: 10px;
+    width: 150px;
+    border-collapse: collapse;
+    border: solid 1px #2F2F2F;
+    color: #000000;
+    font-size: 1.0em;
+  }
+/* フッター */  
+  #footer {
+    text-align: center;
+    font-size: 1.0em;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #2F2F2F;
+
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    z-index: -1;
+  }
+ /* サイトマップ */
+  #sitemap{
+  	font-family: sans-serif;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    background-color: #2F2F2F;
+    font-family:sans-serif;
+  }
+/* サイトマップのリンクの書式 */
+	#sitemap_l{
+		font-size: 18px;
+		margin-bottom: 3%;
+		margin-top: 3%;
+	  	text-decoration: none;
+	  	color: white;
+	  	transition: 0.5s;
+	}
+
+  /* サイトマップのリンク群 */
+  #link{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+/* サイトマップの見出し */
+	#sitemap_h{
+		font-size: 2.0em;
+		color: white;
+	}
+/* 最前部に移動ボタン */	
+  #page-top {
+    position: fixed !important;  
+    position: relative;  
+    bottom: 1%;
+    right: 1%;
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    background: rgba(88,82,82,0.5);
+  }
+  /* 最前部の文字 */
+  #page-top a{
+    text-align: center;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    color: #fff;
+    text-decoration: none; 
+  }
+/* メニュー画面 */
+  #dropmenu{
+    display: none;
+  }
+/* 饗宴 */
+  #kyouen {
+    left: 50%;
+    text-align: center;
+    background: none;
+    margin: 0;
+    font-size: 5em;
+    font-weight: normal;
+    color: white;
+    font-family:serif;
+  }
+  /* サイトパップの空行 */
+  #space{
+    display: none;
+  }
+/* サイトマップの画像 */
+  #imag_area{
+    display: none;
+  }
+  /*tableをスクロールさせる*/
+  .scroll{
+    overflow: auto;　　　　
+  }
+/* 表示非表示ボタン */
+  .openBtn {
+    cursor: pointer;
+    background:#8a9b0f;
+  }
+  .openBtn_i {
+    cursor: pointer;
+    background:#0E789B;
+  }
+  .openBtn:hover {
+    opacity: 0.7;
+  }
+  .openBtn_i:hover {
+    opacity: 0.7;
+  }
+  /* 説明文 */
+  .textArea {
+    display: none;
+    margin-left: 0%;
+  }
+  .textArea_content {
+    display: none;
+    margin-left: 10%;
+  }
+
+  /* ▽▽ハンバーガーメニュー▽▽
+------------------------------------------------------- */
+.hm_menu_check {/* チェックボックスを隠す */
+  display: none;
+}
+.hm_wrap {
+  display: inline-block;
+  position :fixed;
+  top :0;
+  left :0;
+  width :100%;
+  padding :10px;
+  z-index: 1024;
+}
+
+label{
+  /*padding: 10px 10px;*/
+  /*border: 2px solid #444;*/
+  /*border-radius: 24px;*/
+  /*background :rgba(88,82,82,0.5);*/
+}
+
+.hm_title {/* ハンバーガーメニューオープン時の見出し */
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 0 0 0 15px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.5s;
+  transition: transform 0.6s, opacity 0.5s;
+  z-index: 5;
+}
+
+/* ▽▽メニューボタン▽▽ */
+.hm_btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  z-index: 5;
+}
+.hm_btn::before {
+  -webkit-box-shadow: #fff 0 12px 0;
+  box-shadow: #fff 0 12px 0;
+}
+.hm_btn::after {
+  bottom: 0;
+}
+.hm_btn::before,
+.hm_btn::after {
+  width: 30px;
+  height: 6px;
+  background: #fff;
+  display: block;
+  content: '';
+  position: absolute;
+  -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s 0.2s;
+  transition: box-shadow 0.2s linear, transform 0.2s 0.2s;
+}
+/* △△メニューボタン△△ */
+
+.hm_menu_wrap {
+  width :100%;
+  height :10000px;
+  background: #2F2F2F;
+
+  filter:alpha(opacity=90);
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+
+  position: absolute;
+  left: -100%;
+  top: 0;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  z-index: 4;
+}
+
+/* ▽▽開閉時のアニメーション▽▽ */
+.hm_menu_check:checked ~ .hm_title {
+  opacity: 1;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+.hm_menu_check:checked ~ .hm_btn::before {
+  -webkit-box-shadow: transparent 0 0 0;
+  box-shadow: transparent 0 0 0;
+  -webkit-transform: rotate(45deg) translate3d(6px, 11px, 0);
+  transform: rotate(45deg) translate3d(6px, 11px, 0);
+}
+.hm_menu_check:checked ~ .hm_btn::after {
+  -webkit-transform: rotate(-45deg) translate3d(6px, -11px, 0);
+  transform: rotate(-45deg) translate3d(6px, -11px, 0);
+}
+.hm_menu_check:checked ~ .hm_menu_wrap {
+  left: 0;
+}
+
+/* △△開閉時のアニメーション△△ */
+
+/* ▽▽メニュー内のリストスタイル▽▽ */
+.hm_list {
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0;
+}
+.hm_list li a {
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  padding: 8px 22px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.hm_list li a::before {/* aタグマウスオーバー時の背景 */
+  background: #808080;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  -webkit-transition: bottom 0.4s;
+  transition: bottom 0.4s;
+  z-index: -1;
+}
+
+.hm_list li a:hover::before {
+  bottom: 0;
+}
+.hm_list li a:hover::after {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* メニュー内のリストスタイル△△ */
+
+/* △△ハンバーガーメニュー△△
+------------------------------------------------------- */
+
+c{
+  margin-left: 0%;
+}
+}

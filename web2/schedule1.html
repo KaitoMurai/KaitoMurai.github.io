@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="shift-JIS" />
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- モーダルウィンドウCSS  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- スマホ 改行→PC無効 CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+
+    <!-- タイムスケジュール用テーブル CSS -->
+    <link rel="stylesheet" href="css/table.css">
+
+    <!-- レスポンシブル スマホ用 CSS -->
+    <link rel="stylesheet" href="css/smartphone.css">
+    <link rel="stylesheet" href="css/smart.css">
+
+    <!-- 合体用 全体 CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
+
+    <title>高専祭»本祭１日目(Day1) - 晴天時 -</title>
+</head>
+<body>
+<!-- コピー防止 -->
+    <!-- <body oncontextmenu='return false'>  -->
+    <!-- <body onMouseDown="return false;" onSelectStart="return false"> -->
+    <!-- ロード画面の設定 -->
+    <div id="loader-bg">
+        <div id="loader">
+            <img src="img/loading.gif" width="80" height="80"/>
+        </div>
+    </div>-->
+    <!-- ロード画面の設定 -->
+
+    <!-- ロード画面表示後に表示するコンテンツ -->
+    <div id="wrap">    
+
+        <!-- ヘッダー -->
+        <header>
+            <!-- <img src="img/logo_home2.png"> -->
+            <div style="position: relative;">
+                <img src="img/kf2017_poster-001.jpg" alt="topimg"; width="100%";> 
+                <div style="position:absolute; top:50px; left:30px; width: 430px;">
+                    <!--▼▼ハンバーガーメニューここから▼▼-->
+                    <div class="hm_wrap">
+                        <input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/>
+                        <label for="hm_menu" class="hm_btn"></label>
+                        <h2 class="hm_title">MENU</h2>
+                        <nav class="hm_menu_wrap">
+                            <ul class="hm_list">
+                                <li><a href="http://www.kumamoto-nct.ac.jp/">ホーム</a></li>
+                                <li><a href="#">グルメマップ</a></li>
+                                <li><a href="#">タイムスケジュール</a></li>
+                                <li><a href="#">球技大会</a></li>
+                                <li><a href="#site">SITEMAP</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--▲▲ハンバーガーメニューここまで▲▲-->
+                </div>
+            </div>
+
+        </header>
+        <!-- ヘッダー -->
+
+        <!-- メニュー（PC） -->
+        <div id="dropmenu">
+            <li><a href="#">高専祭</a>
+                <ul style="width:100%;">
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">グルメマップ</a></li>
+                    <li><a href="#">タイムスケジュール</a></li>
+                    <li><a href="#">球技大会</a></li>
+                </ul>
+            </li>
+            <li><a href="#">球技大会</a>
+                <ul style="width:100%;">
+                    <li><a href="#date" >開催日</a></li>
+                    <li><a href="#tournament">トーナメント表</a></li>
+                    <li><a href="#schedule">タイムスケジュール</a></li>
+                    <li><a href="#rule">ルール</a></li>
+                </ul>
+            </li>
+            <li><a href="#">その他</a>
+                <ul style="width:100%;">
+                    <li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
+                    <li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
+                    <li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
+                    <li><a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a></li>
+                </ul>
+            </li>
+        </div> 
+        <!-- メニュー（PC） -->
+
+        <!-- メインコンテンツ -->
+        <div id="main_contents">
+
+            <!-- サブタイトル -->
+            <h1 id="secondtitle">本祭１日目(晴天時)　タイムスケジュール</h1>
+            <!-- サブタイトル -->
+
+            <div id="contents">
+                <p id="RealtimeClockArea2"></p>
+                <script type="text/javascript" src="javascript.js" charset="utf-8"></script>
+                <p><br /></p>
+                <table>
+                    <tbody>
+                        <tr class="top">
+                            <td></td>
+                            <td class="stage">ステージ</td>
+                            <td class="ground">グラウンド</td>
+                            <td class="gym">第一体育館</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><a href="#10" class="zyu">10：00</a></td>
+                            <td colspan="3"><a href="#openOP" class="event">OPEN</a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><a href="#openArt" class="event">アートコンテスト<br><br>～11：20</a></td>
+                            <td rowspan="5"><a href="#openFoottoY" class="event">フットト<br>（予選）<br><br>～11：40</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10：30</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11：00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11：30</td>
+                            <td rowspan="3"><a href="#openSweets" class="event">Sweets早食い<br><br>～12：50</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12：00</td>
+                            <td rowspan="10"><a href="#openLive" class="event">音研ライブ<br><br>～18：30</a></td>
+                        </tr>
+                        <tr>
+                            <td>12：30</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13：00</td>
+                            <td rowspan="2"><a href="#openCombi" class="event">ベストコンビ<br>コンテスト</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13：30</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14：00</td>
+                            <td rowspan="2"><a href="#openUn" class="event">14：10～15：10<br>運試し</a></td>
+                            <td rowspan="2"><a href="#openFootto" class="event">フットト<br>（決勝）</a></td>
+                        </tr>
+                        <tr>
+                            <td>14：30</td>
+                        </tr>
+                        <tr>
+                            <td>15：00</td>
+                            <td rowspan="3"><a href="#openMassuru" class="event">15：20～<br><br>マッスルボディー<br class="br-sp">コンテスト</a></td>
+                        </tr>
+                        <tr>
+                            <td>15：30</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16：00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16：30</td>
+                            <td colspan="2">CLOSE</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                このタイムスケジュールは、当日の都合により前後することがありますので、あらかじめご了承ください。
+                </p>
+                <p><br><p>
+                <a href="./schedule1-2.html">本祭1日目（雨天時）のタイムスケジュールへ</a>
+                <p><br><br></p>
+
+
+                <div id="modal">
+                
+                    <div id="openOP">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>OPEN</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉 10：00～</p>
+                            <p id="pop">【場所】校内 各ブース</p>
+                            <p id="pop"><br>高専祭１日目は10時からの開催です！<br>ステージイベントや模擬店、クラブバザーなどでお楽しみください</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+                    <div id="openArt">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>アートコンテスト</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉 10：00～11：20</p>
+                            <p id="pop">【場所】ステージ</p>
+                            <p id="pop"><br>出題されたお題をどれだけアートに描けるか本気で競います！</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+                 
+                    <div id="openFoottoY">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>フットト 予選</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉10：00～11：40</p>
+                            <p id="pop">【場所】グラウンド</p>
+                            <p id="pop"><br>フットサルの優勝チームを予想して景品をゲットしよう<br>決勝は14：00から実施予定です</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+                    <div id="openSweets">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>Sweets早食い</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉11：30～12：50</p>
+                            <p id="pop">【場所】ステージ</p>
+                            <p id="pop"><br>今年は男子も参加可能!!<br>タダでスイーツ食べられます！</p>
+                            <p id="pop">一般参加OKです！</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+                    <div id="openLive">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window onken">
+                            <h2>音研ライブ</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉12：15～18：30</p>
+                            <p id="pop">【場所】第一体育館</p>
+                            <p id="pop"><br>音楽研究部のいろんなバンドが出演します</p>
+                            <p id="pop">詳しいタイムテーブルは「<a href="img/onken.jpg" class="onken" target="_blank">こちら</a>」をご覧ください</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+                    <div id="openCombi">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>ベストコンビコンテスト</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉13：00～14：00</p>
+                            <p id="pop">【場所】ステージ</p>
+                            <p id="pop"><br>新企画！フレンド，カップルによる相性コンテストです</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+                    <div id="openUn">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>運試し</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉14：10～15：10</p>
+                            <p id="pop">【場所】ステージ</p>
+                            <p id="pop"><br>君に運はあるのか！その実力を試せ！</p>
+                            <p id="pop">一般参加OKです！</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+                    <div id="openFootto">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>フットト 決勝</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉14：00～15：00</p>
+                            <p id="pop">【場所】グラウンド</p>
+                            <p id="pop"><br>フットサルの優勝チームを予想して景品をゲットしよう<br>予選は10：00から実施です</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+
+
+                    <div id="openMassuru">
+                        <a href="#10" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>マッスルボディーコンテスト</h2>
+                            <p id="pop">【日時】10/28(土)〈本祭1日目〉15：20～16：30</p>
+                            <p id="pop">【場所】グラウンド</p>
+                            <p id="pop"><br>ひそかに筋トレしているあなた、<br>モテたいあなた、チャンスです！</p>
+                            <a id="pop" class="close" href="#10">【×】CLOSE</a></p>
+                        </div><!--/.modal_window-->
+                    </div>
+                 
+                </div><!--/#modal-->
+        </div><!--contents-->
+</div>
+        <!-- メインコンテンツ -->
+
+        <!-- リンクを張るところ -->
+        <h1 id="site"></h1>
+        <div id="sitemap">
+            <div id = "link">
+                <a style = "display: table;" id = "sitemap_h">SITEMAP</a>
+                <a id="space">&emsp;</a>
+                <a id="sitemap_l" style = "display: table;" href="information.html">校内マップ</a>
+                <a id="sitemap_l" style = "display: table;" href="planning.html">高専祭本祭</a>
+                <a id="sitemap_l" style = "display: table;" href="#">球技大会</a>
+                <a id="sitemap_l" style = "display: table;" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a>
+                <a id="sitemap_l" style = "display: table;" href="https://twitter.com/sysken_ynct">SYSKEN Twitter</a>
+                <a id="sitemap_l" style = "display: table;" href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
+                <a id="sitemap_l" style = "display: table;" href="http://www.kumamoto-nct.ac.jp/">熊本高専HP</a>
+            </div>
+            <div id = "imag_area">
+                <img id="imgs" src="img/logo_home.png">
+            </div>
+        </div>
+        <!-- リンクを張るところ -->
+
+        <!-- フッター -->
+        <div id="footer" style="top: 0px; position: relative;">
+            <hr color="#fff"/>
+            ©2017 NITKumamotoCollege-YatsushiroCampus All Rights Reserved.
+        </div>
+        <!-- フッター -->
+    </div>
+    <!-- ロード画面表示後に表示するコンテンツ -->
+
+    <!-- ページの一番上に移動 -->
+    <!-- <p id="page-top"><a href="#">PAGE TOP</a></p> -->
+    <!-- ページの一番上に移動 -->
+
+    <!-- 時計のスクリプト -->
+    <script>
+       setInterval("DspClk()", 100); //100msごとに更新(時計)
+    </script>
+    <!-- 時計のスクリプト -->
+
+    <!-- スクリプト -->
+    <!-- カレント時間の取得 -->
+    <script type="text/javascript" src="script/clock.js" charset="Shift-JIS"></script>
+    <!-- ページ内のリンクにスムーズスクロール -->
+    <!--<script type="text/javascript" src="script/scroll.js" charset="Shift-JIS"></script>
+    <!-- 表の表示非表示スクリプトの読み込み -->
+    <script type="text/javascript" src="script/hyou.js" charset="Shift-JIS"></script>
+    <!-- リロード時のサイトのフェードイン -->
+    <script type="text/javascript" src="script/fadein.js" charset="Shift-JIS"></script>
+    <!-- ロード画面の設定 -->
+    <script type="text/javascript" src="script/loading.js" charset="Shift-JIS"></script>
+    <!-- 内容を非表示表示する帯の設定 -->
+    <script type="text/javascript" src="script/obi.js" charset="Shift-JIS"></script>
+    <script type="text/javascript" src="script/obi_i.js" charset="Shift-JIS"></script>
+    <!-- ブラウザ判定 -->
+    <script type="text/javascript" src="script/judge_bro.js"></script>
+    <!-- スクリプト -->
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿    ◆CSS
+    /* ContentsArea
+    -------------------------- */
+#contents {
+    margin: 0 auto;
+    padding: 10px 0 50px 0;
+    width: 100%;
+}
+table a {
+   display: table;       /* リンクをブロックレベル化して表示 */
+  /*padding: 0.6em 1em;    内側の余白量を上下に0.6文字分＆左右に1文字分にする */
+}
+    /* Day1 */
+    #openArt,#openFoottoY,#openSweets,#openLive,#openCombi,#openUn,#openFootto,#openMassuru,
+    /* Day2 */
+    #openZatsugaku,#openHayagui,#openKaso,#openWater,#openGames,#openWindMusic,#openStamp,#openB-1,
+    /* Day 1&2 */
+    #openOP
+    {
+	   display: none;
+	   position: fixed;
+    	top: 0;
+   	    left: 0;
+   	    width: 100%;
+    	height: 120%;
+    }
+     
+    .close_overlay {
+	   position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-indent: -9999px;
+        /*position: absolute;*/
+        background: #000;
+        opacity: 0.7;
+        z-index: 5;
+
+  	 min-height: 100%;
+    }
+    .onken{
+        display: inline;
+    }
+    .modal_window {
+        top: 40%;
+        left: 50%;
+        margin: -150px 0 0 -200px;
+        width: 450px;
+        height: 300px;
+        text-align: center;
+        display: block;
+        background: #fff;
+        position: fixed;
+        z-index: 10;
+    }
+    .BB{
+        height: 380px;
+    }
+    .modal_window h2 {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 15%;
+        font-size: 150%;
+        /*font-weight: bold;*/
+        text-align: left;
+        text-indent: 15px;
+
+        color: #010101;/*文字色*/
+        background: #b5d1ff;/*背景色*/
+        border-bottom: solid 3px #516ab6;/*下線*/
+        line-height: 180%;
+    }     
+    .BB h2{
+        height: 11.85%;
+    }
+    .modal_window p {
+        margin: 0 10px;
+        width: 415px;
+        padding: 0 15px 15px 15px;
+        font-size: 12px;
+        line-height: 160%;
+        text-align: left;
+    }
+    #pop{
+        color:black;
+	    font-size: 90%;
+    }
+
+    .close{
+        text-decoration: underline !important;
+        text-align: center;
+        width: 100%;
+    }
+     
+     
+    /* CSS3 ModalWindow SET
+    -------------------------- */
+    @-webkit-keyframes modalFadeIn {
+        0% {opacity:0;display:block;}
+        100% {opacity:1;}
+    }
+     
+    div#modal div:target {
+        -webkit-animation-name: modalFadeIn; 
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        opacity: 1;
+        display:block;
+    }

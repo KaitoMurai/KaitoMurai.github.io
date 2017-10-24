@@ -1,0 +1,60 @@
+﻿/*******************
+
+テーブルのCSS
+
+*******************/
+table , td, th {
+	color: white;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	font-size: 130%;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	/*background-color: white;*/
+}
+td, th {
+	height: 50px;
+	width : 25% ; /* 未対応ブラウザ用フォールバック */
+  	width : -webkit-calc(100% / 4) ;
+  	width : calc(100% / 4) ;
+	vertical-align: middle;
+}
+td.a{
+	color:black;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+}
+tr.top{
+	font-size: 110%;
+}
+tr td:nth-child(1) {
+	white-space: nowrap;
+}
+a {
+    color: black;
+    display: table;
+    text-decoration: none;
+    font-size: 100%;
+    text-align: center;
+}
+a:hover{
+	color:red;
+}
+a.zyu{
+	width: 100%;
+}
+a.zyu:hover{
+	color:black;
+}
+a.event{
+	width: 100%;
+}
+/*.time{
+	font-weight: bolder;
+	display: inline-block;
+	white-space:nowrap;
+}*/
