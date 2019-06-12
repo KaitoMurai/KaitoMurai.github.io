@@ -4,7 +4,7 @@ $(function(){
     cache: false,
     datatype: 'html',
     success: function(html) {
-      var h = $(html).find('#mdServiceStatus');    // 表示させたいコンテンツの要素を指定
+      var h = $(html).find('#subText');    // 表示させたいコンテンツの要素を指定
       $('#wrap').append(h);    // append関数で指定先の要素へ出力
     }
   });
