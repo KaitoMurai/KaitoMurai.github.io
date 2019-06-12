@@ -8,9 +8,9 @@
     <script type="text/javascript" src="jquery.xdomainajax.js"></script>
 <script>
   // 引っ張ってきたいサイトのURL
-  url = 'http://ficc-workbook.tumblr.com/';
+  url = 'https://transit.yahoo.co.jp/traininfo/detail/613/0/';
   $.get(url, function(data){
-    var content = $(data.responseText).find('.title').text();
+    var content = $(data.responseText).find('#mdServiceStatus').text();
     $("#text").text(content);
   });
 </script>
