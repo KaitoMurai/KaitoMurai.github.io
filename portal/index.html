@@ -7,7 +7,6 @@
     
     <script type=”text/javascript” src=”http://code.jquery.com/jquery-1.8.2.min.js”></script>
     <script type="text/javascript" src="jquery.xdomainajax.js"></script>
-    <script type="text/javascript" src="train.js"></script>
 
     <title>TEST</title>
     
@@ -16,6 +15,16 @@
   <body>
     <h1>TEST</h1>
     <div id="wrap">
+$(function() {
+    $.ajax({
+        type: 'GET',
+        url: 'https://transit.yahoo.co.jp/traininfo/detail/613/0/',
+        dataType: 'html',
+        success: function(data) {
+            console.log($(data).find('#mdServiceStatus').text());
+        }
+    });
+});
     </div>
   </body>
 </html>
